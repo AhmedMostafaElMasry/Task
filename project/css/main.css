@@ -1,0 +1,139 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Cairo", sans-serif;
+}
+body .container {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+}
+body .container .leftSide {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #3250fa;
+}
+body .container .leftSide .leftSideWrapper {
+  min-height: 400px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 30px 0 30px 120px;
+}
+body .container .leftSide .leftSideWrapper .label {
+  font-size: 20px;
+  color: #fff;
+}
+body .container .leftSide .leftSideWrapper .login_form {
+  padding: 20px 40px;
+}
+body .container .leftSide .leftSideWrapper .login_form .input {
+  width: 75%;
+  min-width: 200px;
+  height: 40px;
+  margin-bottom: 10px;
+  padding: 0 5px;
+  font-size: 15px;
+  text-align: right;
+  background-color: transparent;
+  border: 2px solid #b9b9b9;
+  outline: none;
+  border-radius: 5px;
+}
+body .container .leftSide .leftSideWrapper .login_form .input::placeholder {
+  color: #fff;
+  font-family: "Cairo", sans-serif;
+}
+body .container .leftSide .leftSideWrapper .login_form button {
+  width: 75%;
+  min-width: 200px;
+  height: 45px;
+  margin: 25px 0 30px 0;
+  font-size: 15px;
+  color: #ffff64;
+  outline: none;
+  cursor: pointer;
+  font-family: "Cairo", sans-serif;
+  background: transparent;
+  border-radius: 25px;
+  border: 2px solid #b9b9b9;
+  transition: 0.5s;
+}
+body .container .leftSide .leftSideWrapper .login_form button:hover {
+  background: #0015ff;
+}
+body .container .leftSide .leftSideWrapper .login_form #email_error,
+body .container .leftSide .leftSideWrapper .login_form #pass_error {
+  margin-top: 5px;
+  margin-bottom: 20px;
+  font-size: 14px;
+  color: red;
+  text-align: center;
+  display: none;
+}
+body .container .rightSide {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffff64;
+}
+body .container .rightSide .rightSideWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: 30px 120px 30px 0;
+}
+body .container .rightSide .rightSideWrapper .rightImg {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+body .container .rightSide .rightSideWrapper .rightTitle {
+  font-size: 22px;
+  color: #3250fa;
+  margin-bottom: 0;
+}
+body .container .rightSide .rightSideWrapper .rightPostion {
+  font-size: 11px;
+}
+body .container .rightSide .rightSideWrapper .rightPrag {
+  font-size: 14px;
+  width: 70%;
+}
+body .container .rightSide .rightSideWrapper .icons {
+  padding: 0;
+  list-style: none;
+  display: flex;
+  text-align: center;
+}
+body .container .rightSide .rightSideWrapper .icons li {
+  width: 35px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px;
+  margin: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+body .container .rightSide .rightSideWrapper .icons .fab {
+  color: #fff;
+}
+
+@media screen and (max-width: 760px) {
+  .rightSideWrapper {
+    margin-right: 0 !important;
+  }
+
+  .leftSideWrapper {
+    margin-left: 0 !important;
+  }
+}
